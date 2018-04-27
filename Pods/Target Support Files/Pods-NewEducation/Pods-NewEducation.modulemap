@@ -1,4 +1,4 @@
-module Pods_NewEducation [system] {
+framework module Pods_NewEducation {
   umbrella header "Pods-NewEducation-umbrella.h"
 
   export *

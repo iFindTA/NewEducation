@@ -7,4 +7,28 @@ import Foundation
 
 class IndexRootProfile: BaseProfile {
 
+    var height = 10
+
+    var actionBlock:(()->())?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+
+
+
+        //as weak var wkSelf = self
+        actionBlock = {[weak self] in
+            //self.height = 20
+            self?.height = 20
+        }
+        actionBlock?()
+
+        print(self.height)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+    }
 }

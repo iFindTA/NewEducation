@@ -24,7 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let bounds = UIScreen.main.bounds
         self.window = UIWindow(frame: bounds);
         self.window?.backgroundColor = UIColor.white
-        rootNaviProfile = BaseNavigationProfile()
+        let rooter = self.assembleRootProfile()
+        rootNaviProfile = BaseNavigationProfile(rootViewController: rooter!)
         self.window!.rootViewController = rootNaviProfile
         self.window!.makeKeyAndVisible()
         
@@ -56,14 +57,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: assemble root profiles
     func assembleRootProfile() -> BaseTabBarProfile! {
         var destProfile:BaseTabBarProfile
-
+        let dark_level:CGFloat = 1.0
+        var profiles = [UIViewController]()
         /*index tab*/
         var title = "首页"
-        var icon = "tabbar_icon_index"
+        var icon = "tabbar_index"
         var image = UIImage(named: icon)
-        image.ap
+        let indexProfile = IndexRootProfile()
+        indexProfile.tabBarItem.title = title
+        indexProfile.tabBarItem.image = image
+        image = image?.pb_darkColor(color: AppColor.THEME_COLOR, level: dark_level)
+        indexProfile.tabBarItem.selectedImage = image
+        profiles.append(indexProfile)
+
+        /*聊天*/
+        title = "聊天"
+        icon = "tabbar_chat"
+        image = UIImage(named: icon)
+        let chatProfile = ChatRootProfile()
+        chatProfile.tabBarItem.title = title
+        chatProfile.tabBarItem.image = image
+        image = image?.pb_darkColor(color: AppColor.THEME_COLOR, level: dark_level)
+        chatProfile.tabBarItem.selectedImage = image
+        profiles.append(chatProfile)
+
+        /*宝宝成长*/
+        title = "宝宝成长"
+        icon = "tabbar_baby"
+        image = UIImage(named: icon)
+        let babyProfile = BabyRootProfile()
+        babyProfile.tabBarItem.title = title
+        babyProfile.tabBarItem.image = image
+        image = image?.pb_darkColor(color: AppColor.THEME_COLOR, level: dark_level)
+        babyProfile.tabBarItem.selectedImage = image
+        profiles.append(babyProfile)
+
+        /*个人中心*/
+        title = "我的"
+        icon = "tabbar_personal"
+        image = UIImage(named: icon)
+        let personalProfile = ChatRootProfile()
+        personalProfile.tabBarItem.title = title
+        personalProfile.tabBarItem.image = image
+        image = image?.pb_darkColor(color: AppColor.THEME_COLOR, level: dark_level)
+        personalProfile.tabBarItem.selectedImage = image
+        profiles.append(personalProfile)
 
         destProfile = BaseTabBarProfile()
+        destProfile.viewControllers = profiles
         return destProfile
     }
     
