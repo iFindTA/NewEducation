@@ -1,0 +1,6 @@
+module Pods_NewEducation [system] {
+  umbrella header "Pods-NewEducation-umbrella.h"
+
+  export *
+  module * { export * }
+}
