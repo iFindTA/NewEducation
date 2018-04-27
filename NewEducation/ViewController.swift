@@ -16,8 +16,9 @@ class ViewController: UIViewController {
         
         let state = SBHTTPState.WiFi
         print(state)
-        
-        SBHTTPService.shared.post()
+
+        var vm = VM()
+        vm.post(data: nil)
     }
 
     override func didReceiveMemoryWarning() {

@@ -5,16 +5,11 @@
 
 import UIKit
 import Foundation
-#if DEBUG
-public static let APP_BASE_HOST = "http://192.168.1.199:8080"
-#else
 
-#endif
-
-func RGBA(r, g, b, a) -> UIColor {
-    return UIColor(red: r, green: g, blue: b, alpha: a)
+struct Macros {
+    public static let APP_BASE_HOST = "http://192.168.1.199:8080/api/app"
 }
 
-func ColorHEX(f) -> UIColor {
-    return
+func RGBA(r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
+    return UIColor(red: r, green: g, blue: b, alpha: a)
 }

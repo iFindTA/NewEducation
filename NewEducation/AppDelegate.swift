@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import AFImageHelper
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    var rootProfile:ViewController?
+    var rootNaviProfile:BaseNavigationProfile?
 
     var rootTabBar: BaseTabBarProfile?
 
@@ -23,8 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let bounds = UIScreen.main.bounds
         self.window = UIWindow(frame: bounds);
         self.window?.backgroundColor = UIColor.white
-        rootProfile = ViewController()
-        self.window!.rootViewController = rootProfile
+        rootNaviProfile = BaseNavigationProfile()
+        self.window!.rootViewController = rootNaviProfile
         self.window!.makeKeyAndVisible()
         
         return true
@@ -52,6 +53,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    // MARK: assemble root profiles
+    func assembleRootProfile() -> BaseTabBarProfile! {
+        var destProfile:BaseTabBarProfile
+
+        /*index tab*/
+        var title = "首页"
+        var icon = "tabbar_icon_index"
+        var image = UIImage(named: icon)
+        image.ap
+
+        destProfile = BaseTabBarProfile()
+        return destProfile
+    }
     
 }
 

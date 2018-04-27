@@ -18,7 +18,7 @@ enum SBHTTPState:Int {
     //case None, WiFi, WLAN, Unavailable
 }
 
-class SBHTTPService: Alamofire.DataRequest {
+class SBHTTPService: NSObject {
     
     //singletone method
     static let shared = SBHTTPService()
