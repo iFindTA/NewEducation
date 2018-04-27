@@ -15,6 +15,10 @@
 		60DE5E332092C2110004A656 /* NewEducationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DE5E322092C2110004A656 /* NewEducationTests.swift */; };
 		60DE5E3E2092C2110004A656 /* NewEducationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DE5E3D2092C2110004A656 /* NewEducationUITests.swift */; };
 		60DE5E4E2092C3390004A656 /* SBHTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DE5E4D2092C3390004A656 /* SBHTTPService.swift */; };
+		60DE5E512092CC400004A656 /* BaseProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DE5E502092CC400004A656 /* BaseProfile.swift */; };
+		60DE5E552092CC790004A656 /* BaseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DE5E542092CC790004A656 /* BaseScene.swift */; };
+		60DE5E582092EA4F0004A656 /* BaseNavigationProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DE5E572092EA4F0004A656 /* BaseNavigationProfile.swift */; };
+		60DE5E5A2092EA6F0004A656 /* BaseTabBarProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DE5E592092EA6F0004A656 /* BaseTabBarProfile.swift */; };
 		AAD43826CBCB305CE9C5BBA5 /* libPods-NewEducation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E829C01301B959000F8F84CC /* libPods-NewEducation.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +54,11 @@
 		60DE5E3D2092C2110004A656 /* NewEducationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEducationUITests.swift; sourceTree = "<group>"; };
 		60DE5E3F2092C2110004A656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60DE5E4D2092C3390004A656 /* SBHTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBHTTPService.swift; sourceTree = "<group>"; };
+		60DE5E502092CC400004A656 /* BaseProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProfile.swift; sourceTree = "<group>"; };
+		60DE5E542092CC790004A656 /* BaseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScene.swift; sourceTree = "<group>"; };
+		60DE5E562092DF340004A656 /* Prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.h; sourceTree = "<group>"; };
+		60DE5E572092EA4F0004A656 /* BaseNavigationProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationProfile.swift; sourceTree = "<group>"; };
+		60DE5E592092EA6F0004A656 /* BaseTabBarProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarProfile.swift; sourceTree = "<group>"; };
 		AD494DBEE00F5F0FF6A4CABD /* Pods-NewEducation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewEducation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewEducation/Pods-NewEducation.debug.xcconfig"; sourceTree = "<group>"; };
 		B3B86727A2CF858A367B8CC9 /* Pods-NewEducation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewEducation.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewEducation/Pods-NewEducation.release.xcconfig"; sourceTree = "<group>"; };
 		E829C01301B959000F8F84CC /* libPods-NewEducation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewEducation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +115,7 @@
 		60DE5E1C2092C2100004A656 /* NewEducation */ = {
 			isa = PBXGroup;
 			children = (
+				60DE5E4F2092CC250004A656 /* Bases */,
 				60DE5E4B2092C3220004A656 /* Pods */,
 				60DE5E1D2092C2100004A656 /* AppDelegate.swift */,
 				60DE5E1F2092C2100004A656 /* ViewController.swift */,
@@ -113,6 +123,7 @@
 				60DE5E242092C2110004A656 /* Assets.xcassets */,
 				60DE5E262092C2110004A656 /* LaunchScreen.storyboard */,
 				60DE5E292092C2110004A656 /* Info.plist */,
+				60DE5E562092DF340004A656 /* Prefix.h */,
 			);
 			path = NewEducation;
 			sourceTree = "<group>";
@@ -150,6 +161,17 @@
 			);
 			path = SBHTTPService;
 			sourceTree = "<group>";
+		};
+		60DE5E4F2092CC250004A656 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				60DE5E502092CC400004A656 /* BaseProfile.swift */,
+				60DE5E542092CC790004A656 /* BaseScene.swift */,
+				60DE5E572092EA4F0004A656 /* BaseNavigationProfile.swift */,
+				60DE5E592092EA6F0004A656 /* BaseTabBarProfile.swift */,
+			);
+			path = Bases;
+			sourceTree = SOURCE_ROOT;
 		};
 		67F71D2ABFE6B47C44614327 /* Pods */ = {
 			isa = PBXGroup;
@@ -321,9 +343,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60DE5E512092CC400004A656 /* BaseProfile.swift in Sources */,
 				60DE5E4E2092C3390004A656 /* SBHTTPService.swift in Sources */,
 				60DE5E202092C2100004A656 /* ViewController.swift in Sources */,
 				60DE5E1E2092C2100004A656 /* AppDelegate.swift in Sources */,
+				60DE5E582092EA4F0004A656 /* BaseNavigationProfile.swift in Sources */,
+				60DE5E552092CC790004A656 /* BaseScene.swift in Sources */,
+				60DE5E5A2092EA6F0004A656 /* BaseTabBarProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +525,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8K6A7692X;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/NewEducation/Prefix.h;
 				INFOPLIST_FILE = NewEducation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -518,7 +547,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8K6A7692X;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/NewEducation/Prefix.h;
 				INFOPLIST_FILE = NewEducation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -6,4 +6,20 @@
 //  Copyright © 2018年 nanhu. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class BaseScene: UIView {
+    
+    deinit {
+        print("scene 析构: class: \(type(of: self))")
+    }
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.backgroundColor = UIColor.white
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+}

@@ -1,0 +1,8 @@
+.DS_Store
+.idea/
+.xcworkspace
+.xcuserdata
+.xcuserstate
+Pods/Pods.xcodeproj/xcuserdata/
+NewEducation.xcodeproj/xcuserdata/
+NewEducation.xcworkspace/xcuserdata/

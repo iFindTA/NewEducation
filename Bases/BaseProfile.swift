@@ -6,4 +6,18 @@
 //  Copyright © 2018年 nanhu. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class BaseProfile: UIViewController {
+    deinit {
+        print("profile 析构: class: \(type(of: self))")
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+}

@@ -6,4 +6,8 @@
 //  Copyright © 2018年 nanhu. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class BaseNavigationProfile: UINavigationController {
+    
+}
