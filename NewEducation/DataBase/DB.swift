@@ -4,11 +4,21 @@
 //
 
 import GRDB
+import WHC_ModelSqliteKit
 
 struct DB {
 
     static func openDataBase(atPath path: String) throws -> DatabaseQueue {
         // Connect to the database
-        //dbQueue = try DatabaseQueue.
+        dbQueue = try DatabaseQueue(path: path)
+
+        
+        return dbQueue
     }
+}
+
+class Personal :NSObject {
+    var name = ""
+
+    var dog = ""
 }

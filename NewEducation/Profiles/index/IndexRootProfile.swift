@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import WHC_ModelSqliteKit
 
 class IndexRootProfile: BaseProfile {
 
@@ -14,8 +15,14 @@ class IndexRootProfile: BaseProfile {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        var user = PBUser()
+        WHC_ModelSqlite.insert(user)
 
 
+        var personal = Personal()
+        personal.name = "kkkkkkkkk"
+        personal.dog = "dog"
+        WHC_ModelSqlite.insert(personal)
 
         //as weak var wkSelf = self
         actionBlock = {[weak self] in

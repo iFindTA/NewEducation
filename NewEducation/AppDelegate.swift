@@ -31,6 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         rootNaviProfile = BaseNavigationProfile(rootViewController: rooter!)
         self.window!.rootViewController = rootNaviProfile
         self.window!.makeKeyAndVisible()
+
+        print(NSHomeDirectory())
         
         return true
     }
