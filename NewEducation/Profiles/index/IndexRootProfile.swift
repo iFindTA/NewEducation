@@ -15,14 +15,14 @@ class IndexRootProfile: BaseProfile {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var user = PBUser()
-        WHC_ModelSqlite.insert(user)
+        let userBuilder = Pbuser.Builder()
+        userBuilder.name = "nanhujiaju"
+        let user = try? userBuilder.build()
+        let userData = try! user?.toJSON()
+        print(user?.data())
 
-
-        var personal = Personal()
-        personal.name = "kkkkkkkkk"
-        personal.dog = "dog"
-        WHC_ModelSqlite.insert(personal)
+        var trans_user = try? Pbuser.fromJSON(data: userData!)
+        print(trans_user?.name)
 
         //as weak var wkSelf = self
         actionBlock = {[weak self] in

@@ -7,47 +7,40 @@
 		<key>AFImageHelper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false />
-			<key>orderHint</key>
-			<integer>1</integer>
+			<false/>
 		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false />
-			<key>orderHint</key>
-			<integer>2</integer>
+			<false/>
 		</dict>
 		<key>GRDB.swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false />
-			<key>orderHint</key>
-			<integer>3</integer>
+			<false/>
 		</dict>
 		<key>Pods-NewEducation.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false />
-			<key>orderHint</key>
-			<integer>4</integer>
+			<false/>
 		</dict>
 		<key>ProtocolBuffers-Swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false />
-			<key>orderHint</key>
-			<integer>5</integer>
+			<false/>
+		</dict>
+		<key>SnapKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>WHC_ModelSqliteKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false />
-			<key>orderHint</key>
-			<integer>6</integer>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict />
+	<dict/>
 </dict>
 </plist>

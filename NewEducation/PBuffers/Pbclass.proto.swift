@@ -238,9 +238,6 @@ final public class Pbclass : GeneratedMessage {
     override public class func className() -> String {
         return "Pbclass"
     }
-    override public func className() -> String {
-        return "Pbclass"
-    }
     //Meta information declaration end
 
     final public class Builder : GeneratedMessageBuilder {

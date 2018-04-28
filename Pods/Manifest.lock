@@ -3,6 +3,7 @@ PODS:
   - Alamofire (4.7.2)
   - GRDB.swift (2.10.0)
   - ProtocolBuffers-Swift (4.0.1)
+  - SnapKit (4.0.0)
   - WHC_ModelSqliteKit (1.3.0):
     - WHC_ModelSqliteKit/standard (= 1.3.0)
   - WHC_ModelSqliteKit/standard (1.3.0)
@@ -12,6 +13,7 @@ DEPENDENCIES:
   - Alamofire (~> 4.7.2)
   - GRDB.swift (~> 2.10.0)
   - ProtocolBuffers-Swift (~> 4.0.1)
+  - SnapKit (~> 4.0.0)
   - WHC_ModelSqliteKit (~> 1.3.0)
 
 SPEC REPOS:
@@ -20,6 +22,7 @@ SPEC REPOS:
     - Alamofire
     - GRDB.swift
     - ProtocolBuffers-Swift
+    - SnapKit
     - WHC_ModelSqliteKit
 
 SPEC CHECKSUMS:
@@ -27,8 +30,9 @@ SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   GRDB.swift: 9859cab1b990eac62ee550d3d2208ec1b44f76af
   ProtocolBuffers-Swift: d1c0724bbfd1924c219131ff80bdda09352d959c
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   WHC_ModelSqliteKit: dfafef3ee872dedd9823395291fc80bf37eac46d
 
-PODFILE CHECKSUM: 468fe3d8a27a5c53e09ce39dc919f31befbdc118
+PODFILE CHECKSUM: 374f46bed66611429df22d0cfdd574a578cf4398
 
 COCOAPODS: 1.5.0
