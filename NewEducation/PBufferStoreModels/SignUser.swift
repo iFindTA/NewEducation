@@ -3,8 +3,8 @@
 // Copyright (c) 2018 nanhu. All rights reserved.
 //
 
-import RealmSwift
+import Foundation
 
-class SignUser: RealmSwift.Object {
+class SignUser: NSObject {
 
 }

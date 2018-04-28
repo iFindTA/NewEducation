@@ -7,7 +7,10 @@
 //
 
 import UIKit
+import GRDB
 import AFImageHelper
+
+var dbQueue: DatabaseQueue!
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -106,6 +109,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         destProfile = BaseTabBarProfile()
         destProfile.viewControllers = profiles
         return destProfile
+    }
+
+    // MARK: setup database
+    private func setupDataBase(_ application: UIApplication) throws {
+        let dbURL = try FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+        //let dbQueue = try DB.
     }
     
 }
