@@ -10,9 +10,8 @@
 #endif
 #endif
 
-#import "WHC_ModelSqlite.h"
-#import "WHC_ModelSqlite.h"
+#import "Kingfisher.h"
 
-FOUNDATION_EXPORT double WHC_ModelSqliteKitVersionNumber;
-FOUNDATION_EXPORT const unsigned char WHC_ModelSqliteKitVersionString[];
+FOUNDATION_EXPORT double KingfisherVersionNumber;
+FOUNDATION_EXPORT const unsigned char KingfisherVersionString[];
 

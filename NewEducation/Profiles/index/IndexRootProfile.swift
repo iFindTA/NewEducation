@@ -3,6 +3,7 @@
 // Copyright (c) 2018 nanhu. All rights reserved.
 //
 
+import SnapKit
 import Foundation
 import WHC_ModelSqliteKit
 
@@ -32,6 +33,8 @@ class IndexRootProfile: BaseProfile {
         actionBlock?()
 
         print(self.height)
+        
+        var btn = UIButton(type: <#T##UIButtonType#>)
     }
 
     override func viewWillAppear(_ animated: Bool) {

@@ -8,6 +8,13 @@
 
 import UIKit
 
+class BaseButton: UIButton {
+}
+
+class <#name#>: <#super class#> {
+    <#code#>
+}
+
 class BaseScene: UIView {
     
     deinit {
