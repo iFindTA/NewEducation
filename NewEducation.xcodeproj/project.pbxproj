@@ -130,32 +130,6 @@
 			path = Macros;
 			sourceTree = "<group>";
 		};
-		8F91B772A3CEC16631951D7B0F369326 /* PBufferStoreModels */ = {
-			isa = PBXGroup;
-			children = (
-				B9A7C425EC7D7EAF142CE3307D077C8F /* SignUser.swift */,
-			);
-			path = PBufferStoreModels;
-			sourceTree = "<group>";
-		};
-		6B73A75E617156DB2ACD543AC035CEEF /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				779B62ED87232E84C6766D4B9A74BC6C /* UIButtonExtensions.swift */,
-				E096C80E47557B5101846ACC6EF83565 /* UIImageExtensions.swift */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		8BFDDC84202DDCBAA0F2B9256464C202 /* PBuffers */ = {
-			isa = PBXGroup;
-			children = (
-				AF440EDD07FA64CF3E30DC403E91F48C /* PBClass.pb.swift */,
-				E403B26A73C2178418170EDF7BDB774D /* PBSignUser.pb.swift */,
-			);
-			path = PBuffers;
-			sourceTree = "<group>";
-		};
 		29809F77B02C54F131DAF991A0F66E8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +165,15 @@
 				5340803BDA9F2EA05981106BA7CFF023 /* Pods */,
 				72A9F94145B54E800A8DE12CF448461E /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		6B73A75E617156DB2ACD543AC035CEEF /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				779B62ED87232E84C6766D4B9A74BC6C /* UIButtonExtensions.swift */,
+				E096C80E47557B5101846ACC6EF83565 /* UIImageExtensions.swift */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		72A9F94145B54E800A8DE12CF448461E /* Products */ = {
@@ -238,6 +221,15 @@
 			path = chat;
 			sourceTree = "<group>";
 		};
+		8BFDDC84202DDCBAA0F2B9256464C202 /* PBuffers */ = {
+			isa = PBXGroup;
+			children = (
+				AF440EDD07FA64CF3E30DC403E91F48C /* PBClass.pb.swift */,
+				E403B26A73C2178418170EDF7BDB774D /* PBSignUser.pb.swift */,
+			);
+			path = PBuffers;
+			sourceTree = "<group>";
+		};
 		8D831D5315993061C05225FF0932211B /* Profiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +239,14 @@
 				81F315DE2E408101DFEB2D36B6ADF85C /* personal */,
 			);
 			path = Profiles;
+			sourceTree = "<group>";
+		};
+		8F91B772A3CEC16631951D7B0F369326 /* PBufferStoreModels */ = {
+			isa = PBXGroup;
+			children = (
+				B9A7C425EC7D7EAF142CE3307D077C8F /* SignUser.swift */,
+			);
+			path = PBufferStoreModels;
 			sourceTree = "<group>";
 		};
 		9F21DFB16BEBA3319F654BE35A70CC42 /* index */ = {
@@ -438,6 +438,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		696AFC227F674F73B706E7A84674BD16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NewEducation/Pods-NewEducation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFImageHelper/AFImageHelper.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFImageHelper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewEducation/Pods-NewEducation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7AECC94A327A33E0C25E1FE7412A31F3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -454,32 +478,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		696AFC227F674F73B706E7A84674BD16 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-NewEducation/Pods-NewEducation-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFImageHelper/AFImageHelper.framework",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFImageHelper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewEducation/Pods-NewEducation-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -553,7 +551,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8K6A7692X;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = $SRCROOT/NewEducation/Prefix.h;
+				GCC_PREFIX_HEADER = "$SRCROOT/NewEducation/Prefix.h";
 				INFOPLIST_FILE = NewEducation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -753,7 +751,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8K6A7692X;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = $SRCROOT/NewEducation/Prefix.h;
+				GCC_PREFIX_HEADER = "$SRCROOT/NewEducation/Prefix.h";
 				INFOPLIST_FILE = NewEducation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
