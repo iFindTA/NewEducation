@@ -17,10 +17,10 @@
 		55EB244A0A5BBA39DF3724C49F6EBB8E /* Pbclass.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD8745A732C0883C5646F43A0D4C393 /* Pbclass.proto.swift */; };
 		560DABC8AD4D4246E73D301290B853DB /* ChatRootProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DEA4365BBAB96E8D54EE65D68E6C00 /* ChatRootProfile.swift */; };
 		5B9C3DC1C9826C17E5F80AC8AB6C4B35 /* NewEducationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5D5C9462B70CD0699A3F0DD3BFB35B /* NewEducationTests.swift */; };
-		60DE5E5F209453BA0004A656 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DE5E5E209453BA0004A656 /* Router.swift */; };
 		621A6FC6611EC73B563A8A5531B40FC3 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9731E5A29C1F3EE2947B43D10B8740 /* Macros.swift */; };
 		7530200A0FE5BF93A4AF4D49508D84A8 /* BaseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4762DAD0313C503B24638FEF76EACB /* BaseScene.swift */; };
 		78BC72949D4CC9158548ADCD204AE96E /* IndexRootProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D8CB1DE944BFBE77765AD21CADE08 /* IndexRootProfile.swift */; };
+		7C422764FCE2D3F061E8505488F62471 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0113892E23B7E2450A9F4A1E92D1A8E3 /* Router.swift */; };
 		866B96E6A930D36CF991402F6C20E38D /* NewEducationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876B0D6DF9A1AE262D8DFFF00587A21A /* NewEducationUITests.swift */; };
 		92DB24B3D32F8CC36B1AF399C9F3E98D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7FF0693D27C27CA30929CE192BE486 /* AppDelegate.swift */; };
 		9519873E3440A6EE05EB4F6E2A578406 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DA220DA8D75CC6D7FBF07A0E9E1D2 /* ViewController.swift */; };
@@ -53,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0113892E23B7E2450A9F4A1E92D1A8E3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		032D4E8C911E62E0440473C190FF2887 /* NewEducationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewEducationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09ED0A3E19212CAB1192EF95D046EA63 /* BabyRootProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BabyRootProfile.swift; sourceTree = "<group>"; };
 		0EA85DCA2F97CEAE3326BDD30A51E07E /* NewEducationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewEducationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +68,6 @@
 		4BD98E662B11566C4D8387FDC3735F74 /* NewEducation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewEducation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E4F7F8B5AEB24208EF484597618E2D1 /* Pods-NewEducation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewEducation.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewEducation/Pods-NewEducation.release.xcconfig"; sourceTree = "<group>"; };
 		5079D0653061A7626078C2CC1C40B92D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60DE5E5E209453BA0004A656 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		628D8CB1DE944BFBE77765AD21CADE08 /* IndexRootProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexRootProfile.swift; sourceTree = "<group>"; };
 		6EFDC8970E85F433EEE046A802A95BB3 /* SBHTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBHTTPService.swift; sourceTree = "<group>"; };
 		779B62ED87232E84C6766D4B9A74BC6C /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
@@ -179,10 +179,10 @@
 			);
 			sourceTree = "<group>";
 		};
-		60DE5E5D2094537F0004A656 /* Router */ = {
+		692B55DCF0D5239347D069D5642CC9AD /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				60DE5E5E209453BA0004A656 /* Router.swift */,
+				0113892E23B7E2450A9F4A1E92D1A8E3 /* Router.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -288,7 +288,6 @@
 		D1EDCC25494A8E374FB0890393D69DFF /* NewEducation */ = {
 			isa = PBXGroup;
 			children = (
-				60DE5E5D2094537F0004A656 /* Router */,
 				80405A9D1B0B7E90253040AC374F73E2 /* Bases */,
 				6B73A75E617156DB2ACD543AC035CEEF /* Categories */,
 				10ACD6714C076DC21796F609DD8B8FC1 /* DataBase */,
@@ -298,6 +297,7 @@
 				8BFDDC84202DDCBAA0F2B9256464C202 /* PBuffers */,
 				D36621269C6B6DC74CF6C9A7A8006D57 /* Pods */,
 				8D831D5315993061C05225FF0932211B /* Profiles */,
+				692B55DCF0D5239347D069D5642CC9AD /* Router */,
 				EE914BA7FC7DB707963831CF2924AD75 /* ViewModels */,
 				AC7FF0693D27C27CA30929CE192BE486 /* AppDelegate.swift */,
 				DA7D5782021C75E792BD54F554623511 /* Assets.xcassets */,
@@ -513,7 +513,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60DE5E5F209453BA0004A656 /* Router.swift in Sources */,
 				92DB24B3D32F8CC36B1AF399C9F3E98D /* AppDelegate.swift in Sources */,
 				077DD3FE65FD29FE3019FAAF7C603D68 /* BabyRootProfile.swift in Sources */,
 				4B3C61B32D0B6E454B657E48D211375B /* BaseNavigationProfile.swift in Sources */,
@@ -529,6 +528,7 @@
 				E7E62B4FF6C3B388AF1BE1C1135204C6 /* PbsignUser.proto.swift in Sources */,
 				BCB0720FBD98863ABC335058D56C1520 /* PersonalRootProfile.swift in Sources */,
 				AC2E7E75B1FE48AA8D365A096C46E1EA /* RouteDispatcher.swift in Sources */,
+				7C422764FCE2D3F061E8505488F62471 /* Router.swift in Sources */,
 				D1027ECA6E6350730C47B6F8BC866269 /* SBHTTPService.swift in Sources */,
 				4EAE941D46ABA2B22552041D7F09AB6B /* SignUser.swift in Sources */,
 				E45054172AA6AA934B0B2F2E3D4D5863 /* UIButtonExtensions.swift in Sources */,
