@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AFImageHelper
 import CoreFoundation
 
 class BaseProfile: UIViewController {

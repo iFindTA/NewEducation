@@ -154,6 +154,16 @@
 			path = DataBase;
 			sourceTree = "<group>";
 		};
+		1376F4177E5331704557A291FB375B68 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9CD6CF52D9F8966649E7965D681B8CB7 /* UIButtonExtensions.swift */,
+				E8F4B04CE4F70D23FBD80BBD2C2B20D7 /* UIDeviceExtentions.swift */,
+				689F8E92D8C21A52A5D5EA8DFC9ED05D /* UIImageExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		29809F77B02C54F131DAF991A0F66E8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,22 +201,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		F3068F1DAF7ABA0EF7733F7BDB580B93 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				AB63639F908F3CE81645C847F8A5F83B /* NavigationBar */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		AB63639F908F3CE81645C847F8A5F83B /* NavigationBar */ = {
-			isa = PBXGroup;
-			children = (
-				E0CC7400909D6A1E46308B58D3D635F8 /* MENavigationBar.swift */,
-			);
-			path = NavigationBar;
-			sourceTree = "<group>";
-		};
 		692B55DCF0D5239347D069D5642CC9AD /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,16 +209,6 @@
 				0113892E23B7E2450A9F4A1E92D1A8E3 /* Router.swift */,
 			);
 			path = Router;
-			sourceTree = "<group>";
-		};
-		1376F4177E5331704557A291FB375B68 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				9CD6CF52D9F8966649E7965D681B8CB7 /* UIButtonExtensions.swift */,
-				E8F4B04CE4F70D23FBD80BBD2C2B20D7 /* UIDeviceExtentions.swift */,
-				689F8E92D8C21A52A5D5EA8DFC9ED05D /* UIImageExtensions.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		72A9F94145B54E800A8DE12CF448461E /* Products */ = {
@@ -310,6 +294,14 @@
 			path = index;
 			sourceTree = "<group>";
 		};
+		AB63639F908F3CE81645C847F8A5F83B /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				E0CC7400909D6A1E46308B58D3D635F8 /* MENavigationBar.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
 		AF699677A5701F1447F642835C5F017B /* player */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +356,14 @@
 				FAFA951D4F6EED94E9B89FE767BFF5FD /* VM.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F3068F1DAF7ABA0EF7733F7BDB580B93 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AB63639F908F3CE81645C847F8A5F83B /* NavigationBar */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		F90FA85270965286509DAA2FF8C4C39C /* NewEducationTests */ = {
@@ -512,7 +512,6 @@
 				"${BUILT_PRODUCTS_DIR}/AFImageHelper/AFImageHelper.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ProtocolBuffers-Swift/ProtocolBuffers.framework",
 				"${BUILT_PRODUCTS_DIR}/SJNavigationPopGesture/SJNavigationPopGesture.framework",
@@ -523,7 +522,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFImageHelper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtocolBuffers.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SJNavigationPopGesture.framework",
@@ -631,13 +629,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8K6A7692X;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = $SRCROOT/NewEducation/Prefix.h;
+				GCC_PREFIX_HEADER = "$SRCROOT/NewEducation/Prefix.h";
 				INFOPLIST_FILE = NewEducation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.landun.edu.NewEducation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -653,11 +648,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8K6A7692X;
 				INFOPLIST_FILE = NewEducationUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.landun.edu.NewEducationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -674,11 +665,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8K6A7692X;
 				INFOPLIST_FILE = NewEducationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.landun.edu.NewEducationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -755,11 +742,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8K6A7692X;
 				INFOPLIST_FILE = NewEducationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.landun.edu.NewEducationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -829,11 +812,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8K6A7692X;
 				INFOPLIST_FILE = NewEducationUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.landun.edu.NewEducationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -851,13 +830,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8K6A7692X;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = $SRCROOT/NewEducation/Prefix.h;
+				GCC_PREFIX_HEADER = "$SRCROOT/NewEducation/Prefix.h";
 				INFOPLIST_FILE = NewEducation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.landun.edu.NewEducation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

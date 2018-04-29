@@ -7,9 +7,7 @@
 //
 
 import UIKit
-import GRDB
-
-var dbQueue: DatabaseQueue!
+import SJNavigationPopGesture
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        .install()
+        SJNavigationPopGesture.install()
         
         let bounds = UIScreen.main.bounds
         self.window = UIWindow(frame: bounds);
