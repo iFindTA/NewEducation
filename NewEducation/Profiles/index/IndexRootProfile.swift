@@ -5,17 +5,20 @@
 
 import SnapKit
 import Foundation
-import WHC_ModelSqliteKit
 
 class IndexRootProfile: BaseProfile {
 
     var height = 10
 
     var actionBlock:(()->())?
+    
+    var btn = UIButton(type: .custom)
+    
+    var videoPlayBtn = UIButton(type: .custom)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        /*
         let userBuilder = Pbuser.Builder()
         userBuilder.name = "nanhujiaju"
         let user = try? userBuilder.build()
@@ -33,12 +36,54 @@ class IndexRootProfile: BaseProfile {
         actionBlock?()
 
         print(self.height)
+        */
+        configureSubviews()
         
-        var btn = UIButton(type: <#T##UIButtonType#>)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+    }
+    
+    func configureSubviews() -> Void {
+        btn.setTitle("route", for: .normal)
+        btn.addTarget(self, action: #selector(routeTouchEvent(_:)), for: .touchUpInside)
+        btn.backgroundColor = UIColor.blue
+        self.view.addSubview(btn)
+        btn.snp.makeConstraints { (make) in
+            make.top.equalTo(self.view).offset(100)
+            make.left.equalTo(self.view).offset(20)
+            make.right.equalTo(self.view).offset(-20)
+            make.height.equalTo(30)
+        }
+        
+        videoPlayBtn.setTitle("video play", for: .normal)
+        videoPlayBtn.addTarget(self, action: #selector(videoPlayeTouchEvent), for: .touchUpInside)
+        videoPlayBtn.backgroundColor = UIColor.red
+        self.view.addSubview(videoPlayBtn)
+        videoPlayBtn.snp.makeConstraints { (make) in
+            make.top.equalTo(btn.snp.bottom).offset(30)
+            make.left.equalTo(self.view).offset(20)
+            make.right.equalTo(self.view).offset(-20)
+            make.height.equalTo(30)
+        }
+    }
+    
+    @objc func routeTouchEvent(_ button: UIButton)  {
+        print("touvh event")
+        
+        //Router.open(RoutePaths.subcategory("视频播放"))
+        
+        let params = ["title":"sub dev---test"]
+        let err = Router.open(RoutePaths.sub(), space: nil, params: params)
+        RouterKit.handleError(err: err)
+    }
+    
+    @objc func videoPlayeTouchEvent() {
+        print("touch video play")
+        let err = Router.open(RoutePaths.videoPlay(), space: nil, params: nil)
+        RouterKit.handleError(err: err)
+    
     }
 }

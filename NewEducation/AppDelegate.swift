@@ -71,7 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let indexProfile = IndexRootProfile()
         indexProfile.tabBarItem.title = title
         indexProfile.tabBarItem.image = image
-        image = image?.pb_darkColor(color: AppColor.THEME_COLOR, level: dark_level)
+        image = image?.pb_darkColor(color: AppColor.COLOR_THEME, level: dark_level)
         indexProfile.tabBarItem.selectedImage = image
         profiles.append(indexProfile)
 
@@ -82,7 +82,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let chatProfile = ChatRootProfile()
         chatProfile.tabBarItem.title = title
         chatProfile.tabBarItem.image = image
-        image = image?.pb_darkColor(color: AppColor.THEME_COLOR, level: dark_level)
+        image = image?.pb_darkColor(color: AppColor.COLOR_THEME, level: dark_level)
         chatProfile.tabBarItem.selectedImage = image
         profiles.append(chatProfile)
 
@@ -93,7 +93,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let babyProfile = BabyRootProfile()
         babyProfile.tabBarItem.title = title
         babyProfile.tabBarItem.image = image
-        image = image?.pb_darkColor(color: AppColor.THEME_COLOR, level: dark_level)
+        image = image?.pb_darkColor(color: AppColor.COLOR_THEME, level: dark_level)
         babyProfile.tabBarItem.selectedImage = image
         profiles.append(babyProfile)
 
@@ -104,7 +104,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let personalProfile = ChatRootProfile()
         personalProfile.tabBarItem.title = title
         personalProfile.tabBarItem.image = image
-        image = image?.pb_darkColor(color: AppColor.THEME_COLOR, level: dark_level)
+        image = image?.pb_darkColor(color: AppColor.COLOR_THEME, level: dark_level)
         personalProfile.tabBarItem.selectedImage = image
         profiles.append(personalProfile)
 

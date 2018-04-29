@@ -11,8 +11,17 @@ import UIKit
 class BaseButton: UIButton {
 }
 
-class <#name#>: <#super class#> {
-    <#code#>
+class BaseLabel: UILabel {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.backgroundColor = UIColor.white
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.backgroundColor = UIColor.white
+    }
 }
 
 class BaseScene: UIView {

@@ -6,7 +6,7 @@
 import Alamofire
 import Foundation
 
-class VM: NSObject {
+struct VM {
     /*命令 code*/
     public var cmdCode = ""
     /*命令版本*/

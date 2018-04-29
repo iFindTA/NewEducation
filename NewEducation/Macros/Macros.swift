@@ -6,21 +6,49 @@
 import UIKit
 import Foundation
 
+public func RGBA(r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
+    return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
+}
+
 struct Macros {
     public static let APP_BASE_HOST = "http://192.168.1.199:8080/api/app"
 }
 
-//struct Color {
-//    var R:CGFloat = 1.0
-//    var G:CGFloat = 1.0
-//    var B:CGFloat = 1.0
-//    var A:CGFloat = 1.0
-//}
-
+// MARK: app颜色
 struct AppColor {
-    public static let THEME_COLOR = RGBA(r: 96, g: 158, b: 225, a: 1)
+    public static let COLOR_THEME = RGBA(r: 96, g: 158, b: 225, a: 1)
+    public static let COLOR_TITLE = RGBA(r: 51, g: 51, b: 51, a: 1)
+}
+// MARK: app字体
+struct AppFont {
+    //字体
+    public static let PF_SC = "PingFangSC-Regular"
+    public static let PF_BOLD = "PingFangSC-SemiBold"
+    public static let PF_MEDIUM = "PingFangSC-Medium"
+    //大小
+    public static let SIZE_TITLE: CGFloat = 15.0
+    public static let SIZE_LARGE_TITLE: CGFloat = 18.0
+    public static let SIZE_SUB_TITLE: CGFloat = 13.0
+    //字体
+    public static func font(_ name: String, size: CGFloat) -> UIFont {
+        return UIFont(name: name, size: size)!
+    }
 }
 
-func RGBA(r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
-    return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
+// MARK: app 常量
+struct AppSize {
+    //屏幕
+    public static let WIDTH_SCREEN = UIScreen.main.bounds.size.width
+    public static let HEIGHT_SCREEN = UIScreen.main.bounds.size.height
+    
+    //高度
+    public static let HEIGHT_TABBAR = 50
+    public static let HEIGHT_NAVIGATIONBAR = 44
+    public static func HEIGHT_STATUSBAR() -> CGFloat {
+        guard UIDevice.current.isX() else {
+            return 20
+        }
+        return 30
+    }
 }
+

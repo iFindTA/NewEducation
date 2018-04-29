@@ -8,16 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		077DD3FE65FD29FE3019FAAF7C603D68 /* BabyRootProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ED0A3E19212CAB1192EF95D046EA63 /* BabyRootProfile.swift */; };
+		11F7D62AF6D9BB0C97861815D9085FC9 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86AE1C4B018B2DD01C0D604CBF0CC6A /* VideoPlayer.swift */; };
 		17907CD632CC57CDC05BDDCBED084A60 /* VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA951D4F6EED94E9B89FE767BFF5FD /* VM.swift */; };
 		32FCF01492597C665FCEAA1C81CEBF8E /* BaseTabBarProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3C3DE58C371EC8F48B41CFF852C40D /* BaseTabBarProfile.swift */; };
 		35B655B74A28865E79B50AC1623BCE38 /* Pods_NewEducation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEF4D7DE7EB35D7924E46AAD62DE944 /* Pods_NewEducation.framework */; };
 		4B3C61B32D0B6E454B657E48D211375B /* BaseNavigationProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3523548D084546D7C1ADC76CC3AD639 /* BaseNavigationProfile.swift */; };
 		4EAE941D46ABA2B22552041D7F09AB6B /* SignUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A7C425EC7D7EAF142CE3307D077C8F /* SignUser.swift */; };
+		4EEEA3E3BA31F6EC98BC6A79A6B2227D /* RoutePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1010C8730E38E5E68107FD8B2A7A050C /* RoutePaths.swift */; };
 		53279A835F6C940B481012F8258AD012 /* CMDCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAB8F7112A38A3E315D27E5813F86D8 /* CMDCodes.swift */; };
 		55EB244A0A5BBA39DF3724C49F6EBB8E /* Pbclass.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD8745A732C0883C5646F43A0D4C393 /* Pbclass.proto.swift */; };
 		560DABC8AD4D4246E73D301290B853DB /* ChatRootProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DEA4365BBAB96E8D54EE65D68E6C00 /* ChatRootProfile.swift */; };
 		5B9C3DC1C9826C17E5F80AC8AB6C4B35 /* NewEducationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5D5C9462B70CD0699A3F0DD3BFB35B /* NewEducationTests.swift */; };
 		621A6FC6611EC73B563A8A5531B40FC3 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9731E5A29C1F3EE2947B43D10B8740 /* Macros.swift */; };
+		6C5CFB1503EEF7381CA826701D975CFD /* RouteNotFound.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71E2A22C80223709424ABC6E05011A2 /* RouteNotFound.swift */; };
 		7530200A0FE5BF93A4AF4D49508D84A8 /* BaseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4762DAD0313C503B24638FEF76EACB /* BaseScene.swift */; };
 		78BC72949D4CC9158548ADCD204AE96E /* IndexRootProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D8CB1DE944BFBE77765AD21CADE08 /* IndexRootProfile.swift */; };
 		7C422764FCE2D3F061E8505488F62471 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0113892E23B7E2450A9F4A1E92D1A8E3 /* Router.swift */; };
@@ -26,9 +29,11 @@
 		9519873E3440A6EE05EB4F6E2A578406 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495DA220DA8D75CC6D7FBF07A0E9E1D2 /* ViewController.swift */; };
 		A2924A820C368031C6458A41D3B7195D /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096C80E47557B5101846ACC6EF83565 /* UIImageExtensions.swift */; };
 		AC2E7E75B1FE48AA8D365A096C46E1EA /* RouteDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A791424AB1D0742D7B4C421E286A7C /* RouteDispatcher.swift */; };
+		AF5D933F1B4696CC6434EFB2B28EE29F /* SubCategoryProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754BF41C03A30065A5EF5DF291652274 /* SubCategoryProfile.swift */; };
 		B8DC380CDAB3ECD53A5CB1C2F6B8DF75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA7D5782021C75E792BD54F554623511 /* Assets.xcassets */; };
 		BCB0720FBD98863ABC335058D56C1520 /* PersonalRootProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481B898F9658C8B19DD755840297D3D /* PersonalRootProfile.swift */; };
 		BE25E6E204B1F43AB4E4827B6448FA49 /* BaseProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DC33B829C6B15D97B73B199BB8C1CD /* BaseProfile.swift */; };
+		C3E7DCE41755A98DC3565F1AE497AB79 /* UIDeviceExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6097F238405BE916AE61DDE37AA9B932 /* UIDeviceExtentions.swift */; };
 		D1027ECA6E6350730C47B6F8BC866269 /* SBHTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFDC8970E85F433EEE046A802A95BB3 /* SBHTTPService.swift */; };
 		E45054172AA6AA934B0B2F2E3D4D5863 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779B62ED87232E84C6766D4B9A74BC6C /* UIButtonExtensions.swift */; };
 		E7E62B4FF6C3B388AF1BE1C1135204C6 /* PbsignUser.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73C0AC1E9D869DF398A67670BDFAF4 /* PbsignUser.proto.swift */; };
@@ -57,6 +62,7 @@
 		032D4E8C911E62E0440473C190FF2887 /* NewEducationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewEducationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09ED0A3E19212CAB1192EF95D046EA63 /* BabyRootProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BabyRootProfile.swift; sourceTree = "<group>"; };
 		0EA85DCA2F97CEAE3326BDD30A51E07E /* NewEducationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewEducationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1010C8730E38E5E68107FD8B2A7A050C /* RoutePaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePaths.swift; sourceTree = "<group>"; };
 		1BEF4D7DE7EB35D7924E46AAD62DE944 /* Pods_NewEducation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewEducation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E3C3DE58C371EC8F48B41CFF852C40D /* BaseTabBarProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarProfile.swift; sourceTree = "<group>"; };
 		2481B898F9658C8B19DD755840297D3D /* PersonalRootProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalRootProfile.swift; sourceTree = "<group>"; };
@@ -68,8 +74,10 @@
 		4BD98E662B11566C4D8387FDC3735F74 /* NewEducation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewEducation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E4F7F8B5AEB24208EF484597618E2D1 /* Pods-NewEducation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewEducation.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewEducation/Pods-NewEducation.release.xcconfig"; sourceTree = "<group>"; };
 		5079D0653061A7626078C2CC1C40B92D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6097F238405BE916AE61DDE37AA9B932 /* UIDeviceExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtentions.swift; sourceTree = "<group>"; };
 		628D8CB1DE944BFBE77765AD21CADE08 /* IndexRootProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexRootProfile.swift; sourceTree = "<group>"; };
 		6EFDC8970E85F433EEE046A802A95BB3 /* SBHTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBHTTPService.swift; sourceTree = "<group>"; };
+		754BF41C03A30065A5EF5DF291652274 /* SubCategoryProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryProfile.swift; sourceTree = "<group>"; };
 		779B62ED87232E84C6766D4B9A74BC6C /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 		83FAA9B13FDE2F7E072F2DE791A11516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		876B0D6DF9A1AE262D8DFFF00587A21A /* NewEducationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEducationUITests.swift; sourceTree = "<group>"; };
@@ -77,10 +85,12 @@
 		9019CCF9EAC8CF8F1CAD3799B7D0309F /* DB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
 		A2DEA4365BBAB96E8D54EE65D68E6C00 /* ChatRootProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRootProfile.swift; sourceTree = "<group>"; };
 		AC7FF0693D27C27CA30929CE192BE486 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B71E2A22C80223709424ABC6E05011A2 /* RouteNotFound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteNotFound.swift; sourceTree = "<group>"; };
 		B9A7C425EC7D7EAF142CE3307D077C8F /* SignUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUser.swift; sourceTree = "<group>"; };
 		B9B2B862AFC2AE4B8E1DB359B33B8490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD73C0AC1E9D869DF398A67670BDFAF4 /* PbsignUser.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PbsignUser.proto.swift; sourceTree = "<group>"; };
 		C3523548D084546D7C1ADC76CC3AD639 /* BaseNavigationProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationProfile.swift; sourceTree = "<group>"; };
+		C86AE1C4B018B2DD01C0D604CBF0CC6A /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 		DA7D5782021C75E792BD54F554623511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAD8745A732C0883C5646F43A0D4C393 /* Pbclass.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pbclass.proto.swift; sourceTree = "<group>"; };
 		DB97AD0AA1121C1A9AABCC316ACBC77E /* Prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.h; sourceTree = "<group>"; };
@@ -179,9 +189,19 @@
 			);
 			sourceTree = "<group>";
 		};
+		AF699677A5701F1447F642835C5F017B /* player */ = {
+			isa = PBXGroup;
+			children = (
+				C86AE1C4B018B2DD01C0D604CBF0CC6A /* VideoPlayer.swift */,
+			);
+			path = player;
+			sourceTree = "<group>";
+		};
 		692B55DCF0D5239347D069D5642CC9AD /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				B71E2A22C80223709424ABC6E05011A2 /* RouteNotFound.swift */,
+				1010C8730E38E5E68107FD8B2A7A050C /* RoutePaths.swift */,
 				0113892E23B7E2450A9F4A1E92D1A8E3 /* Router.swift */,
 			);
 			path = Router;
@@ -191,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				779B62ED87232E84C6766D4B9A74BC6C /* UIButtonExtensions.swift */,
+				6097F238405BE916AE61DDE37AA9B932 /* UIDeviceExtentions.swift */,
 				E096C80E47557B5101846ACC6EF83565 /* UIImageExtensions.swift */,
 			);
 			path = Categories;
@@ -257,6 +278,7 @@
 				8BD9AEAE49D2EFD89CA8E1BE5D79C1E6 /* chat */,
 				9F21DFB16BEBA3319F654BE35A70CC42 /* index */,
 				81F315DE2E408101DFEB2D36B6ADF85C /* personal */,
+				AF699677A5701F1447F642835C5F017B /* player */,
 			);
 			path = Profiles;
 			sourceTree = "<group>";
@@ -273,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				628D8CB1DE944BFBE77765AD21CADE08 /* IndexRootProfile.swift */,
+				754BF41C03A30065A5EF5DF291652274 /* SubCategoryProfile.swift */,
 			);
 			path = index;
 			sourceTree = "<group>";
@@ -528,12 +551,17 @@
 				E7E62B4FF6C3B388AF1BE1C1135204C6 /* PbsignUser.proto.swift in Sources */,
 				BCB0720FBD98863ABC335058D56C1520 /* PersonalRootProfile.swift in Sources */,
 				AC2E7E75B1FE48AA8D365A096C46E1EA /* RouteDispatcher.swift in Sources */,
+				6C5CFB1503EEF7381CA826701D975CFD /* RouteNotFound.swift in Sources */,
+				4EEEA3E3BA31F6EC98BC6A79A6B2227D /* RoutePaths.swift in Sources */,
 				7C422764FCE2D3F061E8505488F62471 /* Router.swift in Sources */,
 				D1027ECA6E6350730C47B6F8BC866269 /* SBHTTPService.swift in Sources */,
 				4EAE941D46ABA2B22552041D7F09AB6B /* SignUser.swift in Sources */,
+				AF5D933F1B4696CC6434EFB2B28EE29F /* SubCategoryProfile.swift in Sources */,
 				E45054172AA6AA934B0B2F2E3D4D5863 /* UIButtonExtensions.swift in Sources */,
+				C3E7DCE41755A98DC3565F1AE497AB79 /* UIDeviceExtentions.swift in Sources */,
 				A2924A820C368031C6458A41D3B7195D /* UIImageExtensions.swift in Sources */,
 				17907CD632CC57CDC05BDDCBED084A60 /* VM.swift in Sources */,
+				11F7D62AF6D9BB0C97861815D9085FC9 /* VideoPlayer.swift in Sources */,
 				9519873E3440A6EE05EB4F6E2A578406 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,10 +607,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8K6A7692X;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$SRCROOT/NewEducation/Prefix.h";
+				GCC_PREFIX_HEADER = $SRCROOT/NewEducation/Prefix.h;
 				INFOPLIST_FILE = NewEducation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.landun.edu.NewEducation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -597,7 +628,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8K6A7692X;
 				INFOPLIST_FILE = NewEducationUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.landun.edu.NewEducationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -614,7 +649,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8K6A7692X;
 				INFOPLIST_FILE = NewEducationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.landun.edu.NewEducationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -691,7 +730,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8K6A7692X;
 				INFOPLIST_FILE = NewEducationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.landun.edu.NewEducationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -761,7 +804,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8K6A7692X;
 				INFOPLIST_FILE = NewEducationUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.landun.edu.NewEducationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -779,10 +826,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8K6A7692X;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$SRCROOT/NewEducation/Prefix.h";
+				GCC_PREFIX_HEADER = $SRCROOT/NewEducation/Prefix.h;
 				INFOPLIST_FILE = NewEducation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.landun.edu.NewEducation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

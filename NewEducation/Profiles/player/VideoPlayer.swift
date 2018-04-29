@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class VideoPlayer: BaseProfile {
+    
+}
+
+
+extension RoutePaths {
+    static func videoPlay() -> String {
+        return "video play"
+    }
+}
