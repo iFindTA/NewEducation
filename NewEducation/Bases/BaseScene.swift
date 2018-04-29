@@ -8,9 +8,22 @@
 
 import UIKit
 
+// MARK: UIButton类
 class BaseButton: UIButton {
+    
 }
 
+extension BaseButton {
+    class func __titleButton(_ title: String, selectTitle: String?, tag: Int = 0, action: Selector, target: Any?) -> BaseButton {
+        let b = BaseButton(frame: .zero)
+        b.titleLabel?.font = AppFont.font(AppFont.PF_BOLD, size: AppFont.SIZE_LARGE_TITLE)
+        b.setTitle(title, for: .normal)
+        
+        return b
+    }
+}
+
+// MARK: UILbel类
 class BaseLabel: UILabel {
     
     override init(frame: CGRect) {
@@ -24,6 +37,7 @@ class BaseLabel: UILabel {
     }
 }
 
+// MARK: UIView
 class BaseScene: UIView {
     
     deinit {

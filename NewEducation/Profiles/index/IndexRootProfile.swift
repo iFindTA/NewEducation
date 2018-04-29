@@ -15,6 +15,10 @@ class IndexRootProfile: BaseProfile {
     var btn = UIButton(type: .custom)
     
     var videoPlayBtn = UIButton(type: .custom)
+    
+    var indexNavigationBar: MEIndexNavigationBar?
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,9 +42,15 @@ class IndexRootProfile: BaseProfile {
         print(self.height)
         */
         
-        self.view.addSubview(self.navigationBar)
-        let item = UINavigationItem(title: "首页")
-        self.navigationBar.pushItem(item, animated: true)
+        //先写死
+        let titles = ["精选", "小班", "中班", "大班"]
+        indexNavigationBar = MEIndexNavigationBar(frame: .zero, titles: titles)
+        view.addSubview(indexNavigationBar!)
+        let barHeight = AppSize.HEIGHT_STATUSBAR() + AppSize.HEIGHT_NAVIGATIONBAR
+        indexNavigationBar?.snp.makeConstraints({ (make) in
+            make.top.left.right.equalTo(view)
+            make.height.equalTo(barHeight)
+        })
         
         configureSubviews()
         

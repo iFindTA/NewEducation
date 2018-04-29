@@ -23,7 +23,12 @@ class RouteNotFound: BaseProfile {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "抱歉"
+        
+        self.view.addSubview(self.navigationBar)
+        let spacer = Kits.barSpacer()
+        let item = UINavigationItem(title: "抱歉")
+        self.navigationBar.pushItem(item, animated: true)
+        
         self.configureSubviews()
     }
     

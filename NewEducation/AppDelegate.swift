@@ -29,6 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rooter = self.assembleRootProfile()
         rootNaviProfile = BaseNavigationProfile(rootViewController: rooter!)
         rootNaviProfile?.setNavigationBarHidden(true, animated: true)
+        rootNaviProfile?.sj_gestureType = .full
         self.window!.rootViewController = rootNaviProfile
         self.window!.makeKeyAndVisible()
 
@@ -101,7 +102,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         title = "我的"
         icon = "tabbar_personal"
         image = UIImage(named: icon)
-        let personalProfile = ChatRootProfile()
+        let personalProfile = PersonalRootProfile()
         personalProfile.tabBarItem.title = title
         personalProfile.tabBarItem.image = image
         image = image?.pb_darkColor(color: AppColor.COLOR_THEME, level: dark_level)

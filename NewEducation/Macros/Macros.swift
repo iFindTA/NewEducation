@@ -41,8 +41,15 @@ struct AppSize {
     public static let WIDTH_SCREEN: CGFloat = UIScreen.main.bounds.size.width
     public static let HEIGHT_SCREEN: CGFloat = UIScreen.main.bounds.size.height
     
+    //宽度
+    public static let WIDTH_DIS: CGFloat = 5
+    public static let WIDTH_MARGIN: CGFloat = 10
+    public static let WIDTH_BOUNDARY: CGFloat = 20
+    
     //高度
     public static let HEIGHT_TABBAR: CGFloat = 50
+    public static let HEIGHT_SUBBAR: CGFloat = 40
+    public static let HEIGHT_ICON: CGFloat = 30
     public static let HEIGHT_NAVIGATIONBAR: CGFloat = 44
     public static func HEIGHT_STATUSBAR() -> CGFloat {
         guard UIDevice.current.isX() else {
