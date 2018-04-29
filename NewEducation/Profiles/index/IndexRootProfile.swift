@@ -37,6 +37,11 @@ class IndexRootProfile: BaseProfile {
 
         print(self.height)
         */
+        
+        self.view.addSubview(self.navigationBar)
+        let item = UINavigationItem(title: "首页")
+        self.navigationBar.pushItem(item, animated: true)
+        
         configureSubviews()
         
     }

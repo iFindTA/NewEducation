@@ -10,12 +10,12 @@
 #define Prefix_h
 
 #if DEBUG
-public func printm(items: Any..., filename: String = #file, function: String = #function, line: Int = #line) {
+public func fmt(items: Any..., filename: String = #file, function: String = #function, line: Int = #line) {
     print("[\((filename as NSString).lastPathComponent) \(line) \(function)]\n",items)
 }
 
 #else
-public func printm(items: Any..., filename: String = #file, function: String = #function, line: Int = #line) { }
+public func fmt(items: Any..., filename: String = #file, function: String = #function, line: Int = #line) { }
 
 #endif
 

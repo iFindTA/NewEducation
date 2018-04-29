@@ -38,12 +38,12 @@ struct AppFont {
 // MARK: app 常量
 struct AppSize {
     //屏幕
-    public static let WIDTH_SCREEN = UIScreen.main.bounds.size.width
-    public static let HEIGHT_SCREEN = UIScreen.main.bounds.size.height
+    public static let WIDTH_SCREEN: CGFloat = UIScreen.main.bounds.size.width
+    public static let HEIGHT_SCREEN: CGFloat = UIScreen.main.bounds.size.height
     
     //高度
-    public static let HEIGHT_TABBAR = 50
-    public static let HEIGHT_NAVIGATIONBAR = 44
+    public static let HEIGHT_TABBAR: CGFloat = 50
+    public static let HEIGHT_NAVIGATIONBAR: CGFloat = 44
     public static func HEIGHT_STATUSBAR() -> CGFloat {
         guard UIDevice.current.isX() else {
             return 20

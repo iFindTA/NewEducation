@@ -1,36 +1,44 @@
 PODS:
   - AFImageHelper (3.2.1)
   - Alamofire (4.7.2)
+  - ESPullToRefresh (2.7)
   - GRDB.swift (2.10.0)
   - Kingfisher (4.7.0)
   - ProtocolBuffers-Swift (4.0.1)
+  - SJNavigationPopGesture (1.3.7.4)
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
   - AFImageHelper (~> 3.2.1)
   - Alamofire (~> 4.7.2)
+  - ESPullToRefresh (~> 2.7)
   - GRDB.swift (~> 2.10.0)
   - Kingfisher (~> 4.7.0)
   - ProtocolBuffers-Swift (~> 4.0.1)
+  - SJNavigationPopGesture (~> 1.3.7.4)
   - SnapKit (~> 4.0.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFImageHelper
     - Alamofire
+    - ESPullToRefresh
     - GRDB.swift
     - Kingfisher
     - ProtocolBuffers-Swift
+    - SJNavigationPopGesture
     - SnapKit
 
 SPEC CHECKSUMS:
   AFImageHelper: 9142599fb4f826b480d177902ab7f0c961bc966c
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  ESPullToRefresh: 119e2710b82b75536aab2bbe4883ba119fca35c8
   GRDB.swift: 9859cab1b990eac62ee550d3d2208ec1b44f76af
   Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
   ProtocolBuffers-Swift: d1c0724bbfd1924c219131ff80bdda09352d959c
+  SJNavigationPopGesture: 81125e5280c37e1e69d549f869973991ba2d547b
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 57a714f575b06b642c3f37e916d7c6b25fc79197
+PODFILE CHECKSUM: 0313e64869eecfd1cda76ce74c1a4e7824f5ef59
 
 COCOAPODS: 1.5.0

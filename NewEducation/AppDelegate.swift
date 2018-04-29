@@ -8,7 +8,6 @@
 
 import UIKit
 import GRDB
-import AFImageHelper
 
 var dbQueue: DatabaseQueue!
 
@@ -24,11 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        .install()
+        
         let bounds = UIScreen.main.bounds
         self.window = UIWindow(frame: bounds);
         self.window?.backgroundColor = UIColor.white
         let rooter = self.assembleRootProfile()
         rootNaviProfile = BaseNavigationProfile(rootViewController: rooter!)
+        rootNaviProfile?.setNavigationBarHidden(true, animated: true)
         self.window!.rootViewController = rootNaviProfile
         self.window!.makeKeyAndVisible()
 

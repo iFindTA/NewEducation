@@ -7,8 +7,30 @@
 //
 
 import UIKit
+import CoreFoundation
 
 class BaseProfile: UIViewController {
+    
+    /// 懒加载
+    lazy var navigationBar: MENavigationBar = {
+        let n = MENavigationBar()
+        let tintColor = RGBA(r: 255, g: 255, b: 255, a: 1);
+        let barTintColor = AppColor.COLOR_THEME;//影响背景
+        let font = AppFont.font(AppFont.PF_BOLD, size: AppFont.SIZE_LARGE_TITLE)
+        n.barStyle = .black
+        let bgImg = UIImage(color: barTintColor);
+        n.setBackgroundImage(bgImg, for: .default)
+        n.shadowImage = UIImage()
+        n.barTintColor = barTintColor
+        n.tintColor = tintColor
+        n.isTranslucent = false
+        n.titleTextAttributes = {[
+            NSAttributedStringKey.font: font,
+            NSAttributedStringKey.strokeColor:tintColor
+            ]}()
+        return n
+    }()
+    
     deinit {
         print("profile 析构: class: \(type(of: self))")
     }
