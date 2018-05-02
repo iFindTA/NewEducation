@@ -11,7 +11,7 @@ import UIKit
 class MENavigationBar: UINavigationBar {
     
     var offset:CGFloat {
-        guard #available(iOS 11.0, *) else {
+        guard UIDevice.current.isX() else {
             return 0
         }
         return 30

@@ -11,7 +11,7 @@ public func RGBA(r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
 }
 
 struct Macros {
-    public static let APP_BASE_HOST = "http://192.168.1.199:8080/api/app"
+    public static let APP_BASE_HOST = "http://192.168.1.178:18080/api/app"
 }
 
 // MARK: app颜色
@@ -55,7 +55,13 @@ struct AppSize {
         guard UIDevice.current.isX() else {
             return 20
         }
-        return 30
+        return 44
+    }
+    
+    public static let SIZE_OFFSET: CGFloat = 2.0
+    // MARK: 以6的尺寸为准
+    public static func adoptSize(_ size:CGFloat) -> CGFloat {
+        return size*(AppSize.WIDTH_SCREEN/375.0)
     }
 }
 

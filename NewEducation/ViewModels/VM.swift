@@ -28,5 +28,8 @@ struct VM {
                 .responseData(queue: .main) { response in
             print(response)
          }
+        
+        let req = Alamofire.request(Macros.APP_BASE_HOST)
+        req.task?.resume()
     }
 }

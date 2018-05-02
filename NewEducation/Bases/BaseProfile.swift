@@ -46,4 +46,12 @@ class BaseProfile: UIViewController {
         
         self.view.backgroundColor = UIColor.white
     }
+    
+    @objc public func defaultGobackStack() {
+        guard self.isBeingPresented else {
+            self.navigationController?.popViewController(animated: true)
+            return
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
 }

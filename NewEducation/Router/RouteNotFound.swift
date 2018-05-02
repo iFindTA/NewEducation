@@ -26,7 +26,9 @@ class RouteNotFound: BaseProfile {
         
         self.view.addSubview(self.navigationBar)
         let spacer = Kits.barSpacer()
+        let backItem = Kits.defaultBackBarItem(self, action: #selector(defaultGobackStack))
         let item = UINavigationItem(title: "抱歉")
+        item.leftBarButtonItems = [spacer, backItem]
         self.navigationBar.pushItem(item, animated: true)
         
         self.configureSubviews()
@@ -40,7 +42,8 @@ class RouteNotFound: BaseProfile {
         label?.text = "该服务目前不可用！"
         self.view.addSubview(label!)
         label?.snp.makeConstraints({ (make) in
-            make.edges.edges.equalTo(self.view)
+            make.top.equalTo(navigationBar.snp.bottom)
+            make.left.bottom.right.equalTo(view)
         })
     }
 }
